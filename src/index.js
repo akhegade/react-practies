@@ -1,10 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-ReactDOM.render(
-  <div>
-    <h1>Hello World</h1>
-    <p>Embeding more than one element in reactDOM</p>
-  </div>,
-  document.getElementById("root")
-);
+const name = "Anil";
+
+ReactDOM.render(<h1>Hello {name}</h1>, document.getElementById("root"));
