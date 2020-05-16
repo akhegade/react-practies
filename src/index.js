@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const name = "Anil";
+const fName = "Anil";
+const lName = "Hegde";
 
-ReactDOM.render(<h1>Hello {name}</h1>, document.getElementById("root"));
+ReactDOM.render(
+  <h1>Hello {`${fName} ${lName}`}</h1>,
+  document.getElementById("root")
+);
