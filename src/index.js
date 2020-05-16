@@ -1,19 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-const fName = "Anil";
-const lName = "Hegde";
+const customStyle = {
+  color: "red",
+  fontSize: "20px",
+  border: "1px solid black"
+};
+
+customStyle.color = "blue";
 
 ReactDOM.render(
   <div>
-    <h1 className="heading" contentEditable="true" spellCheck="false">
-      Hello {`${fName} ${lName}`}
-    </h1>
-    <ul>
-      <li>BMW</li>
-      <li>FERRARI</li>
-      <li>RANGROVER</li>
-    </ul>
+    <h1 style={customStyle}> Hello World</h1>
   </div>,
   document.getElementById("root")
 );
