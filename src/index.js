@@ -5,6 +5,15 @@ const fName = "Anil";
 const lName = "Hegde";
 
 ReactDOM.render(
-  <h1>Hello {`${fName} ${lName}`}</h1>,
+  <div>
+    <h1 className="heading" contentEditable="true" spellCheck="false">
+      Hello {`${fName} ${lName}`}
+    </h1>
+    <ul>
+      <li>BMW</li>
+      <li>FERRARI</li>
+      <li>RANGROVER</li>
+    </ul>
+  </div>,
   document.getElementById("root")
 );
